@@ -1,0 +1,8 @@
+{
+  "mapbox.api.key" : "pk.eyJ1Ijoic2t5Y2F0Y2gtZGV2IiwiYSI6Ik1PVjVYNEkifQ.j2X9OOZDz7ABqUvHk4kesw",
+  "layers" : [
+    {
+      "url" : "https://skycatch.io/m/JdxeIVpV8G"
+    }
+  ]
+}
