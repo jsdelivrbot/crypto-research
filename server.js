@@ -1,8 +1,19 @@
 var express = require('express');
 var app = express();
 
-app.use(express.static(__dirname + '/dist/'));
-app.use(express.static(__dirname + '/img/'));
+const PORT = process.env.PORT || 8080;
 
-app.listen(process.env.PORT || 8080);
-console.log('Listening on port: ' + process.env.PORT);
+const Server = class {
+  constructor () {
+    app.use(express.static('dist'));
+    app.use('/img', express.static('img'));
+  }
+
+  start () {
+    app.listen(PORT);
+    console.log('Listening on port: ' + PORT);
+  }
+};
+
+const server = new Server();
+server.start();

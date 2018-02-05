@@ -9,12 +9,14 @@ export default class App extends React.Component {
       sup:'wat'
     };
 
+    console.log('App constructor.');
   }
 
   render() {
     return (
       <div  className="app">
-        WATTUP!!!
+        WATUP
+        <img src="img/doggo.gif" />
       </div>
     );
   }
